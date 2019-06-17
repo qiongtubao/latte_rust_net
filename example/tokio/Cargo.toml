@@ -1,15 +1,8 @@
 [package]
-name = "latte_rust_net"
+name = "tokio"
 version = "0.1.0"
 authors = ["qiongtubao <810776886@qq.com>"]
 edition = "2018"
 
-[features]
-default = []
-io_tokio = []
-
-
 [dependencies]
-tokio = "*"
-futures = "*"
-bytes = "*"
+latte_rust_net = {path="../../", features=["io_tokio"]}
